@@ -1,0 +1,9 @@
+{{#if data.isLogin}}
+<div class="welcome2">
+    <p>Welcome back {{data.reqData.userName}}!</p>
+</div>
+{{else}}
+<div class="welcome">
+    <p>Thank you {{data.reqData.userName}} for registration!</p>
+</div>
+{{/if}}

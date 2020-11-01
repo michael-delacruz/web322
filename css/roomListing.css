@@ -1,0 +1,33 @@
+.rooms img {
+    width: 98%;
+  }
+  .rooms div {
+    float: left;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .deals {
+    padding: 40px;
+    margin-left: 38%;
+    font-family: "Verdana", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .rooms h6 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Verdana", sans-serif;
+  }
+  .rooms p {
+    font-size: 12px;
+    font-family: "Verdana", sans-serif;
+  }
+  .rooms div {
+    padding-bottom: 45px;
+    padding-left: 10px;
+  }
+  .rooms i {
+    color: #54a0ff;
+  }
