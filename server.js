@@ -1,10 +1,10 @@
-const express = require("express");
-const path = require("path");
-const app = express();
-const exphbs = require('express-handlebars')
-const bodyParser = require('body-parser')
-const validation = require(path.join(__dirname, '/JS/validation.js'))
-const PORT = process.env.PORT || 8080;
+var express = require("express");
+var path = require("path");
+var app = express();
+var exphbs = require('express-handlebars')
+var bodyParser = require('body-parser')
+var validation = require(path.join(__dirname, '/JS/validation.js'))
+var PORT = process.env.PORT || 8080;
 function onHttpStart() {
   console.log("Express http server listening on: " + PORT);
 }
@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "/css")));
 app.use(express.static(path.join(__dirname, "/JS")));
 app.use(express.static(path.join(__dirname, "/images")));
-//send home page
+//send home page  
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/html/home.html"));
 });
